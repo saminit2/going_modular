@@ -45,7 +45,7 @@ class TinyVGG(nn.Module):
           nn.Flatten(),
           # Where did this in_features shape come from? 
           # It's because each layer of our network compresses and changes the shape of our inputs data.
-          nn.Linear(in_features=hidden_units*13*13,
+          nn.Linear(in_features=hidden_units*16*16,
                     out_features=output_shape)
         )
     
